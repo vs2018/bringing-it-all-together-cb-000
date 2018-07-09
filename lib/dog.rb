@@ -41,7 +41,7 @@ class Dog
   
   def self.create(name:, breed:)
     
-    instance = self.new(hash[:name], hash[:breed])
+    instance = self.new(name, breed)
     instance.save
     
   end
