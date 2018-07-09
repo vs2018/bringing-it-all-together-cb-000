@@ -40,8 +40,8 @@ class Dog
   end
   
   def self.create(dog_name:, dog_breed:)
-    puts dog_name
-    puts dog_breed
+    puts dog_name + "hello"
+    puts dog_breed + "why"
     instance = self.new(name: dog_name, breed: dog_breed)
     instance.save
     
