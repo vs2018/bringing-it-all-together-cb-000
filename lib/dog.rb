@@ -45,4 +45,6 @@ class Dog
     instance.save
     
   end
+  
+  
 end
