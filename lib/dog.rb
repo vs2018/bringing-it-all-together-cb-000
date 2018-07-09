@@ -39,12 +39,12 @@ class Dog
     self
   end
   
-  def self.create(dog_name:, dog_breed:)
+  # def self.create(dog_name:, dog_breed:)
     
-    instance = self.new(name: dog_name, breed: dog_breed)
-    instance.save
+  #   instance = self.new(name: dog_name, breed: dog_breed)
+  #   instance.save
     
-  end
+  # end
   
   def self.new_from_db(row)
   new_dog = self.new(id: row[0], name: row[1], breed: row[2])
