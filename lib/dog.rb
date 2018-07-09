@@ -41,7 +41,7 @@ class Dog
   
   def self.create(name, grade)
     
-    instance = self.new(name, grade)
+    instance = self.new(name, breed)
     instance.save
     instance
   end
