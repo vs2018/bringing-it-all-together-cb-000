@@ -80,6 +80,9 @@ class Dog
   end
   
   def self.find_by_id(id)
+     if self.id
+       self.update
+     else
      sql = <<-SQL
       SELECT *
       FROM dogs
@@ -90,6 +93,7 @@ class Dog
     DB[:conn].execute(sql, id).map do |row|
       self.new_from_db(row)
     end.first
+  end
   end
   
   
