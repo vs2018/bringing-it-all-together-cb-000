@@ -43,6 +43,6 @@ class Dog
     
     instance = self.new(name, breed)
     instance.save
-    instance
+    
   end
 end
